@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7B560C91A7FE47400D10D58 /* endian.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5F92F17F0A7D300F76FB1 /* endian.c */; };
+		DE2A39661502846600E4AF15 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = DE2A39651502846600E4AF15 /* config.h */; };
+		DE9798CA14BC839E006E5AC2 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9798C914BC839E006E5AC2 /* libiconv.dylib */; };
+		DEB78AC314BB9ABF00845894 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB78AC214BB9ABF00845894 /* Foundation.framework */; };
+		DEB78AC914BB9ABF00845894 /* DHxlsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78AC814BB9ABF00845894 /* DHxlsReader.m */; };
+		DEB78B3114BB9E6200845894 /* brdb.c.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB78AEF14BB9E6200845894 /* brdb.c.h */; };
+		DEB78B3214BB9E6200845894 /* brdb.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB78AF014BB9E6200845894 /* brdb.h */; };
+		DEB78B3414BB9E6200845894 /* ole.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB78AF414BB9E6200845894 /* ole.h */; };
+		DEB78B3514BB9E6200845894 /* xls.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB78AF514BB9E6200845894 /* xls.h */; };
+		DEB78B3614BB9E6200845894 /* xlsstruct.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB78AF614BB9E6200845894 /* xlsstruct.h */; };
+		DEB78B3714BB9E6200845894 /* xlstool.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB78AF714BB9E6200845894 /* xlstool.h */; };
+		DEB78B3814BB9E6200845894 /* xlstypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB78AF814BB9E6200845894 /* xlstypes.h */; };
+		DEB78B3D14BB9E6200845894 /* ole.c in Sources */ = {isa = PBXBuildFile; fileRef = DEB78B1914BB9E6200845894 /* ole.c */; };
+		DEB78B3E14BB9E6200845894 /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = DEB78B1A14BB9E6200845894 /* xls.c */; };
+		DEB78B4014BB9E6200845894 /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = DEB78B1C14BB9E6200845894 /* xlstool.c */; };
+		DEB78B5014BBA42300845894 /* DHcell.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB78B4E14BBA42300845894 /* DHcell.h */; };
+		DEB78B5114BBA42300845894 /* DHcell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78B4F14BBA42300845894 /* DHcell.m */; };
+		DEB78B5314BBA58300845894 /* DHcell-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB78B5214BBA58300845894 /* DHcell-Private.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DC5F92F17F0A7D300F76FB1 /* endian.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = endian.c; sourceTree = "<group>"; };
+		3DC5F93217F0A7EB00F76FB1 /* endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = endian.h; sourceTree = "<group>"; };
+		97BCBBEB16DD4E9A00FF978C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		97BCBBEC16DD4E9A00FF978C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		97BCBBED16DD4E9A00FF978C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		97BCBBF016DD4E9A00FF978C /* DHxlsReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DHxlsReader-Prefix.pch"; sourceTree = "<group>"; };
+		C7B560BF1A7FDBF800D10D58 /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
+		C7B560C01A7FDBF800D10D58 /* xls2csv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls2csv.c; sourceTree = "<group>"; };
+		DE2A39651502846600E4AF15 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		DE9798C914BC839E006E5AC2 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		DEB78ABF14BB9ABF00845894 /* libDHxlsReaderIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHxlsReaderIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB78AC214BB9ABF00845894 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DEB78AC614BB9ABF00845894 /* DHxlsReaderIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DHxlsReaderIOS-Prefix.pch"; sourceTree = "<group>"; };
+		DEB78AC714BB9ABF00845894 /* DHxlsReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHxlsReader.h; sourceTree = "<group>"; };
+		DEB78AC814BB9ABF00845894 /* DHxlsReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHxlsReader.m; sourceTree = "<group>"; };
+		DEB78AE214BB9E6200845894 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DEB78AE414BB9E6200845894 /* XlsReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XlsReader.cpp; sourceTree = "<group>"; };
+		DEB78AE514BB9E6200845894 /* XlsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XlsReader.h; sourceTree = "<group>"; };
+		DEB78AEF14BB9E6200845894 /* brdb.c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.c.h; sourceTree = "<group>"; };
+		DEB78AF014BB9E6200845894 /* brdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.h; sourceTree = "<group>"; };
+		DEB78AF414BB9E6200845894 /* ole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ole.h; sourceTree = "<group>"; };
+		DEB78AF514BB9E6200845894 /* xls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls.h; sourceTree = "<group>"; };
+		DEB78AF614BB9E6200845894 /* xlsstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlsstruct.h; sourceTree = "<group>"; };
+		DEB78AF714BB9E6200845894 /* xlstool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstool.h; sourceTree = "<group>"; };
+		DEB78AF814BB9E6200845894 /* xlstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstypes.h; sourceTree = "<group>"; };
+		DEB78B1914BB9E6200845894 /* ole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ole.c; sourceTree = "<group>"; };
+		DEB78B1A14BB9E6200845894 /* xls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls.c; sourceTree = "<group>"; };
+		DEB78B1C14BB9E6200845894 /* xlstool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xlstool.c; sourceTree = "<group>"; };
+		DEB78B4E14BBA42300845894 /* DHcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHcell.h; sourceTree = "<group>"; };
+		DEB78B4F14BBA42300845894 /* DHcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHcell.m; sourceTree = "<group>"; };
+		DEB78B5214BBA58300845894 /* DHcell-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHcell-Private.h"; sourceTree = "<group>"; };
+		DEB78B6314BC72D000845894 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEB78ABC14BB9ABF00845894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9798CA14BC839E006E5AC2 /* libiconv.dylib in Frameworks */,
+				DEB78AC314BB9ABF00845894 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97BCBBEA16DD4E9A00FF978C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97BCBBEB16DD4E9A00FF978C /* AppKit.framework */,
+				97BCBBEC16DD4E9A00FF978C /* CoreData.framework */,
+				97BCBBED16DD4E9A00FF978C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		97BCBBEE16DD4E9A00FF978C /* DHxlsReader */ = {
+			isa = PBXGroup;
+			children = (
+				DEB78AC714BB9ABF00845894 /* DHxlsReader.h */,
+				DEB78AC814BB9ABF00845894 /* DHxlsReader.m */,
+				DEB78B4E14BBA42300845894 /* DHcell.h */,
+				DEB78B4F14BBA42300845894 /* DHcell.m */,
+				DEB78B5214BBA58300845894 /* DHcell-Private.h */,
+				97BCBBEF16DD4E9A00FF978C /* Supporting Files */,
+			);
+			path = DHxlsReader;
+			sourceTree = "<group>";
+		};
+		97BCBBEF16DD4E9A00FF978C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97BCBBF016DD4E9A00FF978C /* DHxlsReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEB78AB414BB9ABF00845894 = {
+			isa = PBXGroup;
+			children = (
+				DE2A39651502846600E4AF15 /* config.h */,
+				DEB78B6314BC72D000845894 /* README.md */,
+				97BCBBEE16DD4E9A00FF978C /* DHxlsReader */,
+				DEB78ACF14BB9E6200845894 /* libxls */,
+				DEB78AC514BB9ABF00845894 /* Supporting Files */,
+				DEB78AC114BB9ABF00845894 /* Frameworks */,
+				DEB78AC014BB9ABF00845894 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEB78AC014BB9ABF00845894 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEB78ABF14BB9ABF00845894 /* libDHxlsReaderIOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEB78AC114BB9ABF00845894 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE9798C914BC839E006E5AC2 /* libiconv.dylib */,
+				DEB78AC214BB9ABF00845894 /* Foundation.framework */,
+				97BCBBEA16DD4E9A00FF978C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEB78AC514BB9ABF00845894 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEB78AC614BB9ABF00845894 /* DHxlsReaderIOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = DHxlsReaderIOS;
+			sourceTree = "<group>";
+		};
+		DEB78ACF14BB9E6200845894 /* libxls */ = {
+			isa = PBXGroup;
+			children = (
+				DEB78AE114BB9E6200845894 /* cplusplus */,
+				DEB78AEB14BB9E6200845894 /* include */,
+				DEB78B0D14BB9E6200845894 /* src */,
+			);
+			path = libxls;
+			sourceTree = "<group>";
+		};
+		DEB78AE114BB9E6200845894 /* cplusplus */ = {
+			isa = PBXGroup;
+			children = (
+				DEB78AE214BB9E6200845894 /* main.cpp */,
+				DEB78AE414BB9E6200845894 /* XlsReader.cpp */,
+				DEB78AE514BB9E6200845894 /* XlsReader.h */,
+			);
+			path = cplusplus;
+			sourceTree = "<group>";
+		};
+		DEB78AEB14BB9E6200845894 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DEB78AED14BB9E6200845894 /* libxls */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		DEB78AED14BB9E6200845894 /* libxls */ = {
+			isa = PBXGroup;
+			children = (
+				DEB78AEF14BB9E6200845894 /* brdb.c.h */,
+				DEB78AF014BB9E6200845894 /* brdb.h */,
+				3DC5F93217F0A7EB00F76FB1 /* endian.h */,
+				DEB78AF414BB9E6200845894 /* ole.h */,
+				DEB78AF514BB9E6200845894 /* xls.h */,
+				DEB78AF614BB9E6200845894 /* xlsstruct.h */,
+				DEB78AF714BB9E6200845894 /* xlstool.h */,
+				DEB78AF814BB9E6200845894 /* xlstypes.h */,
+			);
+			path = libxls;
+			sourceTree = "<group>";
+		};
+		DEB78B0D14BB9E6200845894 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3DC5F92F17F0A7D300F76FB1 /* endian.c */,
+				DEB78B1914BB9E6200845894 /* ole.c */,
+				DEB78B1A14BB9E6200845894 /* xls.c */,
+				DEB78B1C14BB9E6200845894 /* xlstool.c */,
+				C7B560BF1A7FDBF800D10D58 /* getopt.c */,
+				C7B560C01A7FDBF800D10D58 /* xls2csv.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DEB78ABD14BB9ABF00845894 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB78B3114BB9E6200845894 /* brdb.c.h in Headers */,
+				DEB78B3214BB9E6200845894 /* brdb.h in Headers */,
+				DEB78B3414BB9E6200845894 /* ole.h in Headers */,
+				DEB78B3514BB9E6200845894 /* xls.h in Headers */,
+				DEB78B3614BB9E6200845894 /* xlsstruct.h in Headers */,
+				DEB78B3714BB9E6200845894 /* xlstool.h in Headers */,
+				DEB78B3814BB9E6200845894 /* xlstypes.h in Headers */,
+				DEB78B5014BBA42300845894 /* DHcell.h in Headers */,
+				DEB78B5314BBA58300845894 /* DHcell-Private.h in Headers */,
+				DE2A39661502846600E4AF15 /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DEB78ABE14BB9ABF00845894 /* DHxlsReaderIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB78ACC14BB9ABF00845894 /* Build configuration list for PBXNativeTarget "DHxlsReaderIOS" */;
+			buildPhases = (
+				DEB78ABB14BB9ABF00845894 /* Sources */,
+				DEB78ABC14BB9ABF00845894 /* Frameworks */,
+				DEB78ABD14BB9ABF00845894 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DHxlsReaderIOS;
+			productName = DHxlsReaderIOS;
+			productReference = DEB78ABF14BB9ABF00845894 /* libDHxlsReaderIOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEB78AB614BB9ABF00845894 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = DEB78AB914BB9ABF00845894 /* Build configuration list for PBXProject "DHxlsReaderIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DEB78AB414BB9ABF00845894;
+			productRefGroup = DEB78AC014BB9ABF00845894 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEB78ABE14BB9ABF00845894 /* DHxlsReaderIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEB78ABB14BB9ABF00845894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B560C91A7FE47400D10D58 /* endian.c in Sources */,
+				DEB78AC914BB9ABF00845894 /* DHxlsReader.m in Sources */,
+				DEB78B3D14BB9E6200845894 /* ole.c in Sources */,
+				DEB78B3E14BB9E6200845894 /* xls.c in Sources */,
+				DEB78B4014BB9E6200845894 /* xlstool.c in Sources */,
+				DEB78B5114BBA42300845894 /* DHcell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DE97994714BCD831006E5AC2 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DHxlsReaderIOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					./libxls,
+					./libxls/include,
+					./libxls/include/libxls,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		DE97994814BCD831006E5AC2 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DHxlsReaderIOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DHxlsReaderIOS/DHxlsReaderIOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Distribution;
+		};
+		DEB78ACA14BB9ABF00845894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DHxlsReaderIOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					./libxls,
+					./libxls/include,
+					./libxls/include/libxls,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DEB78ACB14BB9ABF00845894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DHxlsReaderIOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					./libxls,
+					./libxls/include,
+					./libxls/include/libxls,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEB78ACD14BB9ABF00845894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DHxlsReaderIOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DHxlsReaderIOS/DHxlsReaderIOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DEB78ACE14BB9ABF00845894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DHxlsReaderIOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DHxlsReaderIOS/DHxlsReaderIOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEB78AB914BB9ABF00845894 /* Build configuration list for PBXProject "DHxlsReaderIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB78ACA14BB9ABF00845894 /* Debug */,
+				DEB78ACB14BB9ABF00845894 /* Release */,
+				DE97994714BCD831006E5AC2 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEB78ACC14BB9ABF00845894 /* Build configuration list for PBXNativeTarget "DHxlsReaderIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB78ACD14BB9ABF00845894 /* Debug */,
+				DEB78ACE14BB9ABF00845894 /* Release */,
+				DE97994814BCD831006E5AC2 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEB78AB614BB9ABF00845894 /* Project object */;
+}
