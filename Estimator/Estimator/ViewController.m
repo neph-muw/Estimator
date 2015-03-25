@@ -117,23 +117,39 @@ const double UNIVERSAL_MODE = 1.2;
 }
 
 - (IBAction)emailPressed:(id)sender {
-    mailComposer = [[MFMailComposeViewController alloc]init];
-    mailComposer.mailComposeDelegate = self;
-    [mailComposer setSubject:@"iOS estimate"];
-    
-    NSMutableString *message = [[NSMutableString alloc] init];
-    [message appendString:@"Project : \n"];
-    for (int i=0; i<self.estiky.count; i++) {
-        if (marked[i] == true) {
-            long pages = [[PagesNumberModel pagesModel] pagesNumberForIndex:i];
-            long onePage = [[[self.estiky objectAtIndex:i] objectForKey:hourKey] intValue];
-            [message appendString:[NSString stringWithFormat:@"%ld\t - %@\n", pages*onePage, [[self.estiky objectAtIndex:i] objectForKey:descriptKey]]];
+    if ([MFMailComposeViewController canSendMail]) {
+        _mailComposer = [[MFMailComposeViewController alloc] init];
+        _mailComposer.mailComposeDelegate = self;
+        [_mailComposer setSubject:@"iOS estimate"];
+        
+        NSMutableString *message = [[NSMutableString alloc] init];
+        [message appendString:@"Project : \n"];
+        for (int i=0; i<self.estiky.count; i++) {
+            if (marked[i] == true) {
+                long pages = [[PagesNumberModel pagesModel] pagesNumberForIndex:i];
+                long onePage = [[[self.estiky objectAtIndex:i] objectForKey:hourKey] intValue];
+                [message appendString:[NSString stringWithFormat:@"%ld\t - %@\n", pages*onePage, [[self.estiky objectAtIndex:i] objectForKey:descriptKey]]];
+            }
         }
+        [message appendString:[NSString stringWithFormat:@"\n\nEstimate : %@ hours", self.hoursLabel.text]];
+        
+        [_mailComposer setMessageBody:message isHTML:NO];
+        [_mailComposer setToRecipients:@[@"test@gmail.com"]];
+        
+        [self presentViewController:_mailComposer animated:YES completion:^{
+            NSLog(@"Complete");
+        }];
     }
-    [message appendString:[NSString stringWithFormat:@"\n\nEstimate : %@ hours", self.hoursLabel.text]];
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"Please adjust your email info for sending message inside phone Settings."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Cancel"
+                                              otherButtonTitles: nil];
+        [alert show];
+    }
     
-    [mailComposer setMessageBody:message isHTML:NO];
-    [self presentViewController:mailComposer animated:YES completion:nil];
 }
 
 #pragma mark MFMailComposeViewControllerDelegate
@@ -142,11 +158,37 @@ const double UNIVERSAL_MODE = 1.2;
          didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error{
     if (result) {
         NSLog(@"Result : %d",result);
+        if (result == MFMailComposeResultSent) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success"
+                                                            message:@"Estimate succesfully sent."
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles: nil];
+            [alert show];
+        }
+        else
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning"
+                                                            message:@"Estimate wasn't sent."
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles: nil];
+            [alert show];
+        }
     }
     if (error) {
         NSLog(@"Error : %@",error);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:error.localizedDescription
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        [alert show];
     }
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"Dismissed");
+    }];
 }
 
 - (double)persentageForIOS:(NSString *)iosStr
@@ -221,16 +263,16 @@ const double UNIVERSAL_MODE = 1.2;
         
         row++;
     }
-
+    
     return [NSArray arrayWithArray:exelElements];
-
+    
 }
 
 #pragma mark UITableViewDataSource, UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-     return [self.estiky count];
+    return [self.estiky count];
 }
 
 

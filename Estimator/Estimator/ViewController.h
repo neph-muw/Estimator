@@ -12,7 +12,7 @@
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate, ReestimateDelegate, MFMailComposeViewControllerDelegate>
 {
-    MFMailComposeViewController *mailComposer;
+    MFMailComposeViewController *_mailComposer;
 }
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;

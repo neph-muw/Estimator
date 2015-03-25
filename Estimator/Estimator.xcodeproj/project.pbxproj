@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7042F941AC2E2C700E640D8 /* icon1024x1024 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = C7042F8D1AC2E2C700E640D8 /* icon1024x1024 copy.png */; };
+		C7042F951AC2E2C700E640D8 /* icon120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = C7042F8E1AC2E2C700E640D8 /* icon120x120.png */; };
+		C7042F961AC2E2C700E640D8 /* icon180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = C7042F8F1AC2E2C700E640D8 /* icon180x180.png */; };
+		C7042F971AC2E2C700E640D8 /* icon58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = C7042F901AC2E2C700E640D8 /* icon58x58.png */; };
+		C7042F981AC2E2C700E640D8 /* icon80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = C7042F911AC2E2C700E640D8 /* icon80x80.png */; };
+		C7042F991AC2E2C700E640D8 /* icon87x87.png in Resources */ = {isa = PBXBuildFile; fileRef = C7042F921AC2E2C700E640D8 /* icon87x87.png */; };
+		C7042F9A1AC2E2C700E640D8 /* LaunchRuPortrait4inch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7042F931AC2E2C700E640D8 /* LaunchRuPortrait4inch@2x.png */; };
 		C79F541D1A6F9E7400A812AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C79F541C1A6F9E7400A812AB /* main.m */; };
 		C79F54201A6F9E7400A812AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C79F541F1A6F9E7400A812AB /* AppDelegate.m */; };
 		C79F54231A6F9E7400A812AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79F54221A6F9E7400A812AB /* ViewController.m */; };
@@ -52,6 +59,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C7042F8D1AC2E2C700E640D8 /* icon1024x1024 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1024x1024 copy.png"; sourceTree = "<group>"; };
+		C7042F8E1AC2E2C700E640D8 /* icon120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120x120.png; sourceTree = "<group>"; };
+		C7042F8F1AC2E2C700E640D8 /* icon180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon180x180.png; sourceTree = "<group>"; };
+		C7042F901AC2E2C700E640D8 /* icon58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58x58.png; sourceTree = "<group>"; };
+		C7042F911AC2E2C700E640D8 /* icon80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80x80.png; sourceTree = "<group>"; };
+		C7042F921AC2E2C700E640D8 /* icon87x87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon87x87.png; sourceTree = "<group>"; };
+		C7042F931AC2E2C700E640D8 /* LaunchRuPortrait4inch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchRuPortrait4inch@2x.png"; sourceTree = "<group>"; };
 		C79F54171A6F9E7400A812AB /* Estimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Estimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79F541B1A6F9E7400A812AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C79F541C1A6F9E7400A812AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,13 +118,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C79F540E1A6F9E7400A812AB = {
+		C7042F8C1AC2E2C700E640D8 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				C7042F8D1AC2E2C700E640D8 /* icon1024x1024 copy.png */,
+				C7042F8E1AC2E2C700E640D8 /* icon120x120.png */,
+				C7042F8F1AC2E2C700E640D8 /* icon180x180.png */,
+				C7042F901AC2E2C700E640D8 /* icon58x58.png */,
+				C7042F911AC2E2C700E640D8 /* icon80x80.png */,
+				C7042F921AC2E2C700E640D8 /* icon87x87.png */,
+				C7042F931AC2E2C700E640D8 /* LaunchRuPortrait4inch@2x.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		C7042F9C1AC2E3D200E640D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C7E1421C1A8377AD00696CA6 /* MessageUI.framework */,
 				C7B560CE1A7FE99600D10D58 /* Foundation.framework */,
 				C7B560C51A7FDDD800D10D58 /* libiconv.dylib */,
+			);
+			name = Frameworks;
+			path = Estimator;
+			sourceTree = "<group>";
+		};
+		C79F540E1A6F9E7400A812AB = {
+			isa = PBXGroup;
+			children = (
 				C79F54191A6F9E7400A812AB /* Estimator */,
+				C7042F9C1AC2E3D200E640D8 /* Frameworks */,
 				C79F54331A6F9E7400A812AB /* EstimatorTests */,
 				C79F54181A6F9E7400A812AB /* Products */,
 			);
@@ -136,6 +173,7 @@
 				C7B5609A1A7F967900D10D58 /* EstimateCell */,
 				C7B560A91A7FA6E700D10D58 /* DHxlsReaderIOS.xcodeproj */,
 				C79F54271A6F9E7400A812AB /* Images.xcassets */,
+				C7042F8C1AC2E2C700E640D8 /* icons */,
 				C79F54291A6F9E7400A812AB /* LaunchScreen.xib */,
 				C79F541A1A6F9E7400A812AB /* Supporting Files */,
 			);
@@ -301,11 +339,18 @@
 			files = (
 				C7E1421A1A836D1200696CA6 /* email-icon@2x.png in Resources */,
 				C7E142171A836C0500696CA6 /* email-icon.png in Resources */,
+				C7042F9A1AC2E2C700E640D8 /* LaunchRuPortrait4inch@2x.png in Resources */,
 				C7B560C81A7FE36000D10D58 /* LaunchScreen.xib in Resources */,
+				C7042F941AC2E2C700E640D8 /* icon1024x1024 copy.png in Resources */,
+				C7042F971AC2E2C700E640D8 /* icon58x58.png in Resources */,
+				C7042F981AC2E2C700E640D8 /* icon80x80.png in Resources */,
 				C7B560C71A7FE34000D10D58 /* Main.storyboard in Resources */,
+				C7042F991AC2E2C700E640D8 /* icon87x87.png in Resources */,
 				C79F54281A6F9E7400A812AB /* Images.xcassets in Resources */,
 				C7E1421B1A836D1200696CA6 /* email-icon@3x.png in Resources */,
 				C7B560D11A7FEA1A00D10D58 /* Estimate_hour.xls in Resources */,
+				C7042F951AC2E2C700E640D8 /* icon120x120.png in Resources */,
+				C7042F961AC2E2C700E640D8 /* icon180x180.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,9 +519,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Estimator/EstimatorPrefixHeader.pch";
 				INFOPLIST_FILE = Estimator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -486,9 +532,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Estimator/EstimatorPrefixHeader.pch";
 				INFOPLIST_FILE = Estimator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
