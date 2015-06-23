@@ -18,18 +18,22 @@
 
 @interface EstimateCell : UITableViewCell
 {
-    @public
+@public
     long stateNumber;
 }
 
 @property (strong, nonatomic) id <EstimateCellDelegate> delegate;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *plusMinus;
 @property (strong, nonatomic) IBOutlet YellowLineLabel *cellTitle;
-@property (strong, nonatomic) IBOutlet UILabel *cellHours;
+@property (strong, nonatomic) IBOutlet UILabel *cellSubtitle;
+@property (strong, nonatomic) IBOutlet UILabel *cellCounter;
 - (IBAction)increasePressed:(id)sender;
 - (IBAction)decreasePressed:(id)sender;
+- (void)refreshCounter;
+- (void)setHours:(NSString *)hours;
 
 - (void)setAccessoryType:(UITableViewCellAccessoryType)accessoryType;
+- (void)setAccessoryTypeResetStateNum:(UITableViewCellAccessoryType)accessoryType;
 
 - (long)stateValue;
 

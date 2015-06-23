@@ -11,4 +11,6 @@
 
 @interface YellowLineLabel : UILabel
 
+@property UIColor *linesColour;
+
 @end

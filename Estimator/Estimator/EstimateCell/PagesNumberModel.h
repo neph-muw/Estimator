@@ -25,4 +25,6 @@
 
 - (void)pagesCountChangedTo:(long)pagesNumber indexCell:(unsigned long)index;
 
+- (instancetype)initMAX:(unsigned long)lenghtMAX;
+
 @end

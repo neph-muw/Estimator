@@ -17,8 +17,16 @@
     CGContextSetLineWidth(context, 0.5);
     
     CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
-    CGFloat components[] = {255.0/255.0, 249.0/255.0, 177.0/255.0, 1.0};
-    CGColorRef color = CGColorCreate(colorspace, components);
+    CGColorRef color;
+    if (self.linesColour!=nil) {
+        color = self.linesColour.CGColor;
+    }
+    else
+    {
+        CGFloat components[] = {255.0/255.0, 249.0/255.0, 177.0/255.0, 1.0};
+        color = CGColorCreate(colorspace, components);
+    }
+    
     CGContextSetStrokeColorWithColor(context, color);
     
     for (int i=0; i<rect.size.height; i++) {

@@ -8,30 +8,73 @@
 
 #import "EstimateCell.h"
 
+@interface EstimateCell ()
+
+@property (strong, nonatomic) IBOutlet UILabel *cellHours;
+
+@end
+
 @implementation EstimateCell
 
 
 - (IBAction)increasePressed:(id)sender {
     long pageValue = [self.cellHours.text intValue]/stateNumber;
     stateNumber++;
-    self.cellHours.text = [NSString stringWithFormat:@"%ld", ([self.cellHours.text intValue] + pageValue)];
+    self.cellHours.text = [NSString stringWithFormat:@"%ld", (stateNumber * pageValue)];
     UITableView *table = [self parentTableView];
     [self.delegate pagesCountChangedTo:stateNumber indexCell:[table indexPathForCell:self].row];
+    [self refreshCounter];
 }
 
 - (IBAction)decreasePressed:(id)sender {
     if (stateNumber>1) {
         long pageValue = [self.cellHours.text intValue]/stateNumber;
         stateNumber--;
-        self.cellHours.text = [NSString stringWithFormat:@"%ld", ([self.cellHours.text intValue] - pageValue)];
+        self.cellHours.text = [NSString stringWithFormat:@"%ld", (stateNumber * pageValue)];
         UITableView *table = [self parentTableView];
         [self.delegate pagesCountChangedTo:stateNumber indexCell:[table indexPathForCell:self].row];
+        [self refreshCounter];
+    }
+}
+
+
+
+- (void)setHours:(NSString *)hours
+{
+    NSLog(@"setHours: %@ pages %ld", hours, stateNumber);
+    self.cellHours.text = [NSString stringWithFormat:@"%ld", (stateNumber * [hours intValue])];
+    [self refreshCounter];
+}
+
+- (void)refreshCounter
+{
+    NSLog(@"refreshCounter cell: %@ pages %ld", self.cellHours.text, stateNumber);
+    if (stateNumber>1) {
+        self.cellCounter.hidden = NO;
+        long pageValue = [self.cellHours.text intValue]/stateNumber;
+        self.cellCounter.text = [NSString stringWithFormat:@"%ld*%ld", stateNumber, pageValue];
+    }
+    else
+    {
+        self.cellCounter.hidden = YES;
     }
 }
 
 - (long)stateValue
 {
     return stateNumber;
+}
+
+- (void)setAccessoryTypeResetStateNum:(UITableViewCellAccessoryType)accessoryType
+{
+    //set default value
+    long pageValue = [self.cellHours.text intValue]/stateNumber;
+    self.cellHours.text = [NSString stringWithFormat:@"%ld", pageValue];
+    stateNumber = 1;
+    UITableView *table = [self parentTableView];
+    [self.delegate pagesCountChangedTo:stateNumber indexCell:[table indexPathForCell:self].row];
+    
+    [self setAccessoryType:accessoryType];
 }
 
 - (void)setAccessoryType:(UITableViewCellAccessoryType)accessoryType
@@ -48,14 +91,10 @@
         for (UIButton *button in self.plusMinus) {
             button.hidden = YES;
         }
-        //set default value
-        long pageValue = [self.cellHours.text intValue]/stateNumber;
-        self.cellHours.text = [NSString stringWithFormat:@"%ld", pageValue];
-        stateNumber = 1;
-        UITableView *table = [self parentTableView];
-        [self.delegate pagesCountChangedTo:stateNumber indexCell:[table indexPathForCell:self].row];
         
     }
+    
+    [self refreshCounter];
 }
 
 -(UITableView *)parentTableView {

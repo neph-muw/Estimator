@@ -65,9 +65,6 @@ static PagesNumberModel *singleton;
         [pagesInCell replaceObjectAtIndex:index withObject:[NSNumber numberWithLong:pagesNumber]];
         [self.delegate reestimate];
     }
-    
-    
-    
 }
 
 - (long)pagesNumberForIndex:(unsigned long)index
@@ -77,7 +74,7 @@ static PagesNumberModel *singleton;
             return [[pagesInCell objectAtIndex:index] longValue];
         }
     }
-
+    
     return 1;
     
 }

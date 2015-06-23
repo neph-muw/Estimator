@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Global.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSDictionary *appDefaults = [NSDictionary
+                                 dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:@"CacheDataAgressively"];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     return YES;
 }
 
@@ -32,6 +39,14 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"enable_sound"]) {
+        soundEnable = YES;
+    }
+    else
+    {
+        soundEnable = NO;
+    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
