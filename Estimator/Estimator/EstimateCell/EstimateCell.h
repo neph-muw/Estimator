@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "YellowLineLabel.h"
-
+ 
 @protocol EstimateCellDelegate <NSObject>
 
 - (void)pagesCountChangedTo:(long)pagesNumber indexCell:(unsigned long)index;

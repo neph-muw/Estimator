@@ -45,7 +45,7 @@
     self.cellHours.text = [NSString stringWithFormat:@"%ld", (stateNumber * [hours intValue])];
     [self refreshCounter];
 }
-
+ 
 - (void)refreshCounter
 {
     NSLog(@"refreshCounter cell: %@ pages %ld", self.cellHours.text, stateNumber);

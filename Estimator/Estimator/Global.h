@@ -8,7 +8,7 @@
 
 #ifndef Estimator_Global_h
 #define Estimator_Global_h
-
+ 
 BOOL soundEnable;
 
 #endif

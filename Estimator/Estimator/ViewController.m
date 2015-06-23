@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "EstimateCell/EstimateCell.h"
 #import "UIImage+animatedGIF.h"
-
+ 
 const NSString *hourKey = @"HOUR";
 const NSString *descriptKey = @"DESCRIPTION";
 const NSString *subDescriptKey = @"SUB_DESCRIPTION";
